@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 BottomNavigationBar shopBottomNavigationBar() {
   return BottomNavigationBar(
+    unselectedItemColor: Colors.orange[100],
     items: allBottomBarItems.map((BottomBarItem bottomItem) {
       return BottomNavigationBarItem(
-          icon: Icon(bottomItem.icon),
-          label: bottomItem.label,
-          backgroundColor: Colors.black45);
+        icon: Icon(bottomItem.icon),
+        label: bottomItem.label,
+      );
     }).toList(),
     // currentIndex: _selectedIndex,
     selectedItemColor: Colors.amber[800],
@@ -25,7 +26,7 @@ class BottomBarItem {
 List<BottomBarItem> allBottomBarItems = <BottomBarItem>[
   BottomBarItem(0, 'Главная', Icons.home),
   BottomBarItem(1, 'Каталог', Icons.search),
-  BottomBarItem(2, 'Главная', Icons.shopping_cart),
-  BottomBarItem(3, 'Главная', Icons.favorite),
-  BottomBarItem(4, 'Главная', Icons.person)
+  BottomBarItem(2, 'Корзина', Icons.shopping_cart),
+  BottomBarItem(3, 'Избранное', Icons.favorite),
+  BottomBarItem(4, 'Профиль', Icons.person)
 ];
