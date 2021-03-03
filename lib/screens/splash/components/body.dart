@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:money_shop/components/defaultButton.dart';
+import 'package:money_shop/screens/signIn/signInScreen.dart';
 import 'package:money_shop/screens/splash/components/splashContent.dart';
 import 'package:money_shop/size_config.dart';
 
@@ -59,7 +60,9 @@ class _BodyState extends State<Body> {
                     Spacer(),
                     DefaultButton(
                       text: 'Continue',
-                      onPress: null,
+                      onPress: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     Spacer()
                   ],

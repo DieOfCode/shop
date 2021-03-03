@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:money_shop/routes.dart';
 import 'package:money_shop/screens/homeScreen.dart';
 import 'package:money_shop/screens/splash/splashScreen.dart';
+import 'package:money_shop/theme.dart';
 import 'package:money_shop/widget/bottomBar/bottomBar.dart';
 
 import 'constants.dart';
@@ -17,12 +18,7 @@ class ShopApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          textTheme: TextTheme(
-              bodyText1: TextStyle(color: kTextColor),
-              bodyText2: TextStyle(color: kTextColor))),
+      theme: theme(),
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );
