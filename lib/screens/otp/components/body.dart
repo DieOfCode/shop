@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:money_shop/components/defaultButton.dart';
 import 'package:money_shop/constants.dart';
+import 'package:money_shop/screens/home/homeScreen.dart';
 import 'package:money_shop/size_config.dart';
 
 class OtpBody extends StatelessWidget {
@@ -161,7 +162,11 @@ class _OtpFormState extends State<OtpForm> {
           SizedBox(
             height: SizeConfig.screenHeight * 0.15,
           ),
-          DefaultButton(text: 'Continue', onPress: () {})
+          DefaultButton(
+              text: 'Continue',
+              onPress: () {
+                Navigator.pushNamed(context, HomeScreen.routeName);
+              })
         ],
       ),
     );

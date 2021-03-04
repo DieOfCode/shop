@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:money_shop/routes.dart';
-import 'package:money_shop/screens/homeScreen.dart';
+import 'package:money_shop/screens/home/homeScreen.dart';
 import 'package:money_shop/screens/signUp/signUpScreen.dart';
 import 'package:money_shop/screens/splash/splashScreen.dart';
 import 'package:money_shop/size_config.dart';

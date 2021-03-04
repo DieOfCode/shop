@@ -1,16 +1,12 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:money_shop/widget/components/categories.dart';
 import 'package:money_shop/widget/components/discountBanner.dart';
 import 'package:money_shop/widget/components/popularProducts.dart';
 import 'package:money_shop/widget/components/searchBar.dart';
 import 'package:money_shop/widget/components/specialOffers.dart';
 
-class ShopMainPage extends StatefulWidget {
-  @override
-  _ShopMainPageState createState() => _ShopMainPageState();
-}
-
-class _ShopMainPageState extends State<ShopMainPage> {
+class HomeScreenBody extends StatelessWidget {
+  static String routeName = '/home';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -26,7 +22,8 @@ class _ShopMainPageState extends State<ShopMainPage> {
             SizedBox(height: 20),
             SpecialOffer(),
             SizedBox(height: 20),
-            PopularProducts()
+            PopularProducts(),
+            SizedBox(height: 20)
           ],
         ),
       ),
