@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:money_shop/routes.dart';
 import 'package:money_shop/screens/homeScreen.dart';
+import 'package:money_shop/screens/signUp/signUpScreen.dart';
 import 'package:money_shop/screens/splash/splashScreen.dart';
+import 'package:money_shop/size_config.dart';
 import 'package:money_shop/theme.dart';
 import 'package:money_shop/widget/bottomBar/bottomBar.dart';
 
@@ -19,7 +21,7 @@ class ShopApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: theme(),
-      initialRoute: SplashScreen.routeName,
+      initialRoute: SignUpScreen.routeName,
       routes: routes,
     );
   }
